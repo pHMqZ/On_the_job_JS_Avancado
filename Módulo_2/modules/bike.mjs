@@ -1,4 +1,4 @@
-class Bike {
+export class Bike {
     velocidade = 0
 
     andar() {
@@ -6,5 +6,3 @@ class Bike {
         this.velocidade = 5
     }
 }
-
-export { Bike };

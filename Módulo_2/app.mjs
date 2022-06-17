@@ -1,4 +1,4 @@
-import { Car } from "./modules/car.mjs";
+import Car from "./modules/car.mjs";
 import { Bike } from "./modules/bike.mjs";
 
 let carro = new Car();
