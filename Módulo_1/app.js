@@ -1,29 +1,38 @@
-var carro = {}
+class Carro {
+    velocidade = 0
+    ligado = false
+    nivelCombustivel = 100
+    cor;
 
-carro.velocidade = 0
-carro.ligado = false
-carro.nivelCombustivel = 100
-carro.quantPortas = 4
-carro.combustivel = "flex"
-carro.cor = "Vermelho"
-carro.potencia = 100
+    constructor(cor) {
+        console.log("Carro criado")
+        this.cor = cor
+    }
 
-carro.ligar = function() {
-    if (this.ligado) {
-        console.log("Carro já ligado")
-    } else {
-        this.ligado = true
+    ligar() {
+        if (this.ligado) {
+            console.log("Carro já ligado")
+        } else {
+            this.ligado = true
+        }
+    }
+
+    andar() {
+        if (!this.ligado) {
+            this.ligar()
+        }
+        this.velocidade = 40
+
     }
 }
 
-carro.andar = function() {
-    if (!this.ligado) {
-        this.ligar()
-    }
-    this.velocidade = 40
+let carro1 = new Carro("Vermelho")
+carro1.andar()
+console.log(carro1.ligado)
+console.log(carro1.velocidade)
+console.log(carro1.cor)
 
-}
-
-carro.andar()
-console.log(carro.velocidade)
-console.log(carro.ligado)
+let carro2 = new Carro("Azul")
+console.log(carro2.ligado)
+console.log(carro2.velocidade)
+console.log(carro2.cor)
