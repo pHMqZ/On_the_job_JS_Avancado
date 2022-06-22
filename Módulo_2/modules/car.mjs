@@ -1,4 +1,4 @@
-class Car {
+class Veiculo {
     velocidade = 0
     ligado = false
     ligar() {
@@ -16,4 +16,4 @@ class Car {
     }
 }
 
-export default Car;
+export { Veiculo as Car };
