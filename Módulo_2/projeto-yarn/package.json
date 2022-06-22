@@ -1,0 +1,15 @@
+{
+    "name": "projeto-yarn",
+    "version": "1.0.0",
+    "description": "Pacote de teste para curso de JS avançado",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Phillip Marques",
+    "license": "MIT",
+    "type": "module",
+    "dependencies": {
+        "moment": "^2.29.3"
+    }
+}
