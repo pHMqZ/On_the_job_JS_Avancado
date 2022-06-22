@@ -1,4 +1,4 @@
-export class Veiculo {
+export class Bike {
     velocidade = 0
 
     andar() {

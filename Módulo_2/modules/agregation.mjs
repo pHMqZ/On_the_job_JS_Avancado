@@ -1,4 +1,4 @@
 export { Car }
 from './car.mjs';
-export { Veiculo as Bike }
+export { Bike }
 from './bike.mjs';
