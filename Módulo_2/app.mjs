@@ -1,5 +1,4 @@
-import { Car } from "./modules/car.mjs";
-import { Veiculo as Bike } from "./modules/bike.mjs";
+import { Car, Bike } from "./modules/agregation.mjs";
 import * as Utils from './modules/utils.mjs';
 
 let carro = new Car();
