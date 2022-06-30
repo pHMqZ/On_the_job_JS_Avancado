@@ -21,8 +21,6 @@ const retorna1mais1 = () => {
 }
 console.log(retorna1mais1())
 
-const voidFunction = () => {
-    console.log("dentro da void")
-}
+const voidFunction = () => console.log("dentro da void")
 const voidArrow = () => voidFunction()
 console.log(voidArrow())
